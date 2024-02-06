@@ -1,0 +1,88 @@
+<h1>  Registration Form</h1>
+<form [formGroup]="helloForm" (ngSubmit)="(this.helloForm.value)" novalidate>
+    <p>
+        <label for="username"> Username </label>
+        <input type="text" placeholder="Enter the Name" formControlName="username">
+    </p>
+    <span class="text-danger"
+      *ngIf="helloForm.get('username')?.invalid && helloForm.get('username')?.touched || helloForm.get('username')?.dirty">
+      <span [hidden]="!helloForm.get('username')?.hasError('required')">
+        Username is invalid
+      </span>
+      <span [hidden]="!helloForm.get('username')?.hasError('minlength')">
+        Minlength is 3
+      </span>
+    </span> 
+ 
+    <p>
+        <label for="password"> Password </label>
+        <input type="password" placeholder="Enter the Password" formControlName="password">
+    </p>
+    <span class="text-danger"
+      *ngIf="helloForm.get('password')?.invalid && helloForm.get('password')?.touched || helloForm.get('password')?.dirty">
+      <span [hidden]="!helloForm.get('password')?.hasError('required')">
+        Password is invalid
+      </span>
+      <span [hidden]="!helloForm.get('password')?.hasError('minlength')">
+        Strong Password
+      </span>
+    </span>
+
+    <p>
+        <label for="phone"> Phone.No </label>
+        <input type="text" placeholder="Enter the phone no" formControlName="phone">
+    </p>
+    <span class="text-danger"
+      *ngIf="helloForm.get('phone')?.invalid && helloForm.get('phone')?.touched || helloForm.get('phone')?.dirty">
+      <span [hidden]="!helloForm.get('phone')?.hasError('required')">
+        Phone No is invalid
+      </span>
+      <span [hidden]="!helloForm.get('phone')?.hasError('minlength')">
+        Maximum 10 numbers
+      </span>
+    </span>
+    <p>
+        <label for="age"> Age </label>
+        <input type="text" placeholder="Enter the age" formControlName="age">
+    </p>
+    <span class="text-danger"
+      *ngIf="helloForm.get('age')?.invalid && helloForm.get('age')?.touched || helloForm.get('age')?.dirty">
+      <span [hidden]="!helloForm.get('age')?.hasError('required')">
+        Age is invalid
+      </span>
+    </span>
+    <p>
+        <label for="address"> Address </label>
+        <input type="text" placeholder="Enter the Address" formControlName="address">
+    </p>
+    <span class="text-danger"
+      *ngIf="helloForm.get('address')?.invalid && helloForm.get('address')?.touched || helloForm.get('address')?.dirty">
+      <span [hidden]="!helloForm.get('address')?.hasError('required')">
+        Address is invalid
+      </span>
+    </span>
+    <p>
+        <label for="state"> State </label>
+        <input type="text" placeholder="Enter the State" formControlName="state">
+    </p>
+    <span class="text-danger"
+      *ngIf="helloForm.get('state')?.invalid && helloForm.get('state')?.touched || helloForm.get('state')?.dirty">
+      <span [hidden]="!helloForm.get('state')?.hasError('required')">
+        state is invalid
+      </span>
+    </span>
+    <p>
+        <label for="city"> City </label>
+        <input type="text" placeholder="Enter the City" formControlName="city">
+    </p>
+    <span class="text-danger"
+      *ngIf="helloForm.get('city')?.invalid && helloForm.get('city')?.touched || helloForm.get('city')?.dirty">
+      <span [hidden]="!helloForm.get('city')?.hasError('required')">
+        City is invalid
+      </span>
+    </span>
+    <button type="button" class="btn btn-success" (click)="postdata()" [disabled]="this.helloForm.invalid">
+        Submit</button> 
+        <button type="reset" class="btn btn-secondary ">Reset</button>
+
+</form>

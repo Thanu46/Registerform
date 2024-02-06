@@ -1,0 +1,13 @@
+<h1> Login Form </h1>
+<form [formGroup]="ballForm">
+    <p>
+        <label for="username"> Username </label>
+        <input type="text" placeholder="Enter the Name" formControlName="username">
+    </p>
+     <p>
+        <label for="password"> Password </label>
+        <input type="password" placeholder="Enter the Password" formControlName="password">
+    </p>
+   <!-- <button type="button" class="btn btn-success" (click)="login()"> Login</button> -->
+    <button type="button" class="btn btn-success" (click)="login(this.ballForm.value)"> Login</button>
+    </form>

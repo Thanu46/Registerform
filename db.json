@@ -1,0 +1,54 @@
+{
+  "posts": [
+    {
+      "username": "thana",
+      "password": "1234",
+      "phone": "9876897989",
+      "age": "21",
+      "address": "89/0 street",
+      "state": "tamilnadu",
+      "city": "tenkasi",
+      "id": 7
+    },
+    {
+      "username": "allan",
+      "password": "12345",
+      "phone": "7923472757",
+      "age": "12",
+      "address": "hdvdhh",
+      "state": "erfefeev",
+      "city": "frergeg",
+      "id": 9
+    },
+    {
+      "username": "maha",
+      "password": "12123",
+      "phone": "1233455667",
+      "age": "21",
+      "address": "34/5 street,",
+      "state": "tamilnadu",
+      "city": "tenkasi",
+      "id": 10
+    },
+    {
+      "username": "ttttt",
+      "password": "11111",
+      "phone": "6878798989",
+      "age": "56",
+      "address": "hjkjkjkj",
+      "state": "bhnbnb",
+      "city": "ffgfgf",
+      "id": 12
+    },
+    {
+      "username": "nivetha",
+      "password": "123456",
+      "phone": "1234567890",
+      "age": "45",
+      "address": "12 Street",
+      "state": "Tamilnadu",
+      "city": "surandai",
+      "id": 15
+    }
+  ]
+}
